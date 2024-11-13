@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-export default function Item({id,name,color,price,img,}) {
+export default function Item({id,name,price,img,}) {
     return (
         <div className="flex flex-col my-10 mx-10">
             <div
@@ -14,7 +14,6 @@ export default function Item({id,name,color,price,img,}) {
                 </div>
             </div>
             <h4 className="text-sm font-medium text-blue-500">CLP$ {price}</h4>
-            <h4 className="text-sm font-medium text-gray-400"> {color}</h4>
         </div>
     )
 }

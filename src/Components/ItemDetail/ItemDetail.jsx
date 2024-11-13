@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { getProductById } from "../../Data/asyncMock"
-import { useParams } from "react-router-dom"
+import { getProductById } from '../../Data/asyncMock';
+import { useParams } from "react-router-dom";
 
 export default function ItemDetail(){
 
