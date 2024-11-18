@@ -26,7 +26,7 @@ export default function Navbar() {
                     </li>
                 </ul>
             </nav>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center pr-4'>
                 <div className='relative py-1'>
                     <div className='top-0 absolute left-3'>
                         <p className='flex h-2 w-2 items-center justify-center rounded-full bg-red-500 p-3 text-xs text-white'>3</p>
