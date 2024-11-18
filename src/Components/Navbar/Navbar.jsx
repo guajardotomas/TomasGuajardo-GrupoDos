@@ -12,16 +12,16 @@ export default function Navbar() {
             </div>
             <nav>
                 <ul className="flex items-center justify-around gap-12">
-                    <li className="font-bold hover:bg-slate-300 transition-all ease-linear px-2 py-1 bg-white rounded-xl hover:text-white   uppercase"><a href="#home" id='home'>
+                    <li className="font-bold hover:bg-slate-300 transition-all ease-linear px-2 py-1 rounded-xl hover:text-white   uppercase"><a href="#home" id='home'>
                         <Link to="/Home">Home</Link></a>
                     </li>
-                    <li className="font-bold  hover:bg-slate-300 transition-all ease-linear px-2 py-1 bg-white rounded-xl hover:text-white  uppercase"><a href="#home"id='Tienda'>
+                    <li className="font-bold  hover:bg-slate-300 transition-all ease-linear px-2 py-1 rounded-xl hover:text-white  uppercase"><a href="#home"id='Tienda'>
                         <Link to="/Products">Products</Link></a>
                     </li>
-                    <li className="font-bold  hover:bg-slate-300 transition-all ease-linear px-2 py-1 bg-white rounded-xl hover:text-white  uppercase"><a href="#">
+                    <li className="font-bold  hover:bg-slate-300 transition-all ease-linear px-2 py-1 rounded-xl hover:text-white  uppercase"><a href="#">
                         <Link to="/Contact">Contact</Link></a>
                     </li>
-                    <li className="font-bold  hover:bg-slate-300 transition-all ease-linear px-2 py-1 bg-white rounded-xl hover:text-white  uppercase"><a href="#" id="Account">
+                    <li className="font-bold  hover:bg-slate-300 transition-all ease-linear px-2 py-1 rounded-xl hover:text-white  uppercase"><a href="#" id="Account">
                         <Link to="/Account">Account</Link></a>
                     </li>
                 </ul>
