@@ -98,11 +98,11 @@ export const getProductById = (id) => {
         });
 };
 
-export const getProductByCategory = (category) => {
+export const getProductByCategoty = (category) =>{
     return new Promise((res) =>{
         const productosFiltrados = products.filter((product) => product.category === category);
         setTimeout(() =>{
             res(productosFiltrados);
-        },2000);
+        }, 2000);
     });
 };

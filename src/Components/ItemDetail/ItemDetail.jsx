@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getProductById } from '../../Data/asyncMock';
 import { useParams } from "react-router-dom";
+import Loading from '../Loading/Loading';
 
 export default function ItemDetail(){
 
@@ -32,7 +33,7 @@ const decrementQuantity = ()=>{
 const precioTotal = product.price * quantity;
 
 if (Loading){
-    return <div className="py-20px"><p>Loading...</p></div>;
+    return <div className="container mx-auto max-w-1170px"><Loading/></div>;
 }
 
 if (!product){
