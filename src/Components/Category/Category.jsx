@@ -22,6 +22,7 @@ export default function ProductsCategory(){
 
     return(
     <div className="container mx-auto max-w-[1170px]">
+        <NavCategory/>
         {loading ?(
                 <div>
                     <Loading />
