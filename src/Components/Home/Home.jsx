@@ -40,7 +40,7 @@ const products = [
 export default function Home() {
     return (
         <div className="bg-white py-20">
-            <img src="https://static.zara.net/assets/public/8054/8191/82df4307ab70/1cbdaeac2779/image-landscape-dad8b399-10bd-4706-9cf9-76afd2350bad-default_0/image-landscape-dad8b399-10bd-4706-9cf9-76afd2350bad-default_0.jpg?ts=1729075949338&w=1847&f=auto" alt="background"/>
+            <img src="https://assets.teenvogue.com/photos/633dbbb29407f031a64abb0a/16:9/w_1920,c_limit/220801-05_0943_03_QC_EXT.jpg" alt="background"/>
             <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                 <h2 className="text-2xl font-bold tracking-tight text-gray-900">Productos Destacados</h2>
 
