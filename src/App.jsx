@@ -1,15 +1,15 @@
 import './App.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar.jsx";
-import Home from "./components/Home/Home.jsx";
+import Navbar from "./Components/Navbar/Navbar.jsx";
+import Home from "./Components/Home/Home.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Contact from "./Components/Contact/Contact.jsx";
 import ProductPage from "./Components/Products/Products.jsx";
 import ItemDetail from './Components/ItemDetail/ItemDetail.jsx';
 import Account from './Components/Account/Account.jsx';
 import ProductsCategory from './Components/Category/Category.jsx';
-import CartProvider from './components/Cart/CartContext.jsx';
-import CartPage from "./components/Cart/Cart.jsx";
+import CartProvider from './Components/Cart/CartContext.jsx';
+import CartPage from "./Components/Cart/Cart.jsx";
 
 
 function App() {
