@@ -8,13 +8,16 @@ import ProductPage from "./Components/Products/Products.jsx";
 import ItemDetail from './Components/ItemDetail/ItemDetail.jsx';
 import Account from './Components/Account/Account.jsx';
 import ProductsCategory from './Components/Category/Category.jsx';
+import CartProvider from './components/Cart/CartContext.jsx';
+import CartPage from "./components/Cart/Cart.jsx";
 
 
 function App() {
   return (
     <>
         <BrowserRouter>
-            <Navbar/>
+         <CartProvider>
+          <Navbar/>
                 <Routes>
                     <Route path="/home" element={<Home/>}/>
                     <Route path="/contact" element={<Contact/>}/>
@@ -22,11 +25,13 @@ function App() {
                     <Route path='/category/:categoryId' element={<ProductsCategory />} />
                     <Route path='/products/:productId' element={<ItemDetail/>}/>
                     <Route path='/account' element={<Account/>}/>
+                    <Route path='/Cart' element={<CartPage/>} />
                 </Routes>
             <Footer/>
+         </CartProvider>
         </BrowserRouter>
     </>
   )
 }
 
-export default App
+export default App;

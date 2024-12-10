@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useCart } from "../Cart/CartContext.jsx";
 
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../../Data/asyncMock.jsx';
@@ -8,6 +9,7 @@ export default function ItemDetail() {
     const { productId } = useParams();
     const [product, setProduct] = useState({product: 0, stock: 0});
     const [loading, setLoading] = useState(true);
+    const { addToCart } = useCart();
 
      useEffect(() => {
         getProductById(productId).then((data) => {
@@ -66,8 +68,14 @@ export default function ItemDetail() {
 
                     <p className='text-[20px] my-[20px]'>Precio Total: ${precioTotal}</p>
                     
-                    <button className='bg-[#7c8796] text-[#ffffff] text-[20px] px-[20px] py-[5px] hover:bg-[#2e3030] rounded-md'>Comprar</button>
-                    
+                    <button className='bg-[#7c8796] text-[#ffffff] text-[20px] px-[20px] py-[5px] hover:bg-[#2e3030] rounded-md'>
+                        <span>Comprar</span>
+                        <ion-icon name="cash-outline" className="text-24px"></ion-icon>
+                        </button>
+                    <button className='bg-[#7c8796] text-[#ffffff] text-[20px] px-[20px] py-[5px] hover:bg-[#2e3030] rounded-md' onClick={() => addToCart(product,quantity)} >
+                        <span> Agregar al carrito </span>
+                        <ion-icon name="cart-outline" className="text-24px"></ion-icon>
+                        </button>
                 </div>
             </div>
         </div>
