@@ -4,7 +4,7 @@ export default function CartPage() {
     const { cart, removeFromCart, getTotalPrice } = useCart();
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 pt-40">
             <h2 className="text-2xl font-semibold mb-4">Carrito de compras</h2>
             {cart.length === 0 ? (
                 <p>El carrito está vacío</p>
@@ -19,7 +19,7 @@ export default function CartPage() {
                                 </div>
                                 <button
                                     onClick={() => removeFromCart(item.id)}
-                                    className="text-red-500 hover:text-red-700"
+                                    className="text-red-500 hover:bg-red-900 hover:text-white rounded-lg px-3"
                                 >
                                     Eliminar
                                 </button>
@@ -28,7 +28,7 @@ export default function CartPage() {
                     </ul>
                     <div className="mt-4">
                         <h3 className="font-semibold text-xl">Total: ${getTotalPrice()}</h3>
-                        <button className="w-full px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+                        <button className=" px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
                             Finalizar compra
                         </button>
                     </div>

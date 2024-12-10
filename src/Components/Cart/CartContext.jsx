@@ -39,7 +39,7 @@ const CartProvider = ({ children }) =>{
     };
 
     const getTotalPrice = () => {
-        return cart.reduse((total, item) =>{
+        return cart.reduce((total, item) =>{
             if(typeof item.price !== "number" || typeof item.quantity !== "number"){
                 console.error("precio o cantidad no son validos", item);
                 return total;
