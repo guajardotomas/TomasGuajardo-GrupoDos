@@ -58,8 +58,7 @@ export default function Navbar() {
                         <div className='mt-4'>
                             <button 
                                 onClick={clearCart} 
-                                className='w-full px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600'
-                            >
+                                className='w-full px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600'>
                                 Vaciar Carrito
                             </button>
                             <Link to="/cart" className='block text-center mt-2 px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700'>

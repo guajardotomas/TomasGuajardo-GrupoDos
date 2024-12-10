@@ -16,8 +16,8 @@ function App() {
   return (
     <>
         <BrowserRouter>
-         <CartProvider>
-          <Navbar/>
+        <CartProvider>
+         <Navbar/>
                 <Routes>
                     <Route path="/home" element={<Home/>}/>
                     <Route path="/contact" element={<Contact/>}/>
@@ -25,10 +25,10 @@ function App() {
                     <Route path='/category/:categoryId' element={<ProductsCategory />} />
                     <Route path='/products/:productId' element={<ItemDetail/>}/>
                     <Route path='/account' element={<Account/>}/>
-                    <Route path="/cart" element={<CartPage />} />
+                    <Route path="/Cart" element={<CartPage />} />
                 </Routes>
             <Footer/>
-         </CartProvider>
+          </CartProvider>  
         </BrowserRouter>
     </>
   )
